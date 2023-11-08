@@ -58,7 +58,11 @@ return {
       "html",
       "clangd",
       "svelte",
-      "pyright"
+      "pyright",
+      "bashls",
+      "gopls",
+      "elixirls",
+      "gdscript"
     },
   },
 
