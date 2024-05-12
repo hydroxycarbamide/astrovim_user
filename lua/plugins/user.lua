@@ -81,8 +81,8 @@ return {
     end,
   },
 
-  {
-    "Exafunction/codeium.vim",
-    event = "BufEnter",
-  },
+  -- {
+  --   "Exafunction/codeium.vim",
+  --   event = "BufEnter",
+  -- },
 }
