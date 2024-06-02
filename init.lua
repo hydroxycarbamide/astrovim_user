@@ -24,6 +24,7 @@ if vim.g.neovide then
   vim.g.neovide_padding_bottom = 20
   vim.g.neovide_padding_right = 20
   vim.g.neovide_padding_left = 20
+  vim.g.neovide_scale_factor = 1
 end
 
 require "lazy_setup"
