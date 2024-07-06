@@ -15,17 +15,5 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
-vim.keymap.set("i", "jk", "<esc>")
-
--- neovide
-if vim.g.neovide then
-  -- Put anything you want to happen only in Neovide here
-  vim.g.neovide_padding_top = 20
-  vim.g.neovide_padding_bottom = 20
-  vim.g.neovide_padding_right = 20
-  vim.g.neovide_padding_left = 20
-  vim.g.neovide_scale_factor = 1
-end
-
 require "lazy_setup"
 require "polish"
