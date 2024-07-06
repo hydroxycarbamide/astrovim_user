@@ -3,8 +3,6 @@
 
 ---@type LazySpec
 
-vim.keymap.set("i", "jk", "<esc>")
-
 return {
 
   -- == Examples of Adding Plugins ==

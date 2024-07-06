@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -13,7 +11,7 @@ return {
     -- Configure core features of AstroNvim
     features = {
       large_buf = { size = 1024 * 500, lines = 10000 }, -- set global limits for large files for disabling features like treesitter
-      autopairs = true, -- enable autopairs at start
+      autopairs = false, -- enable autopairs at start
       cmp = true, -- enable completion at start
       diagnostics_mode = 3, -- diagnostic mode on start (0 = off, 1 = no signs/virtual text, 2 = no virtual text, 3 = on)
       highlighturl = true, -- highlight URLs at start
@@ -44,6 +42,7 @@ return {
     mappings = {
       -- first key is the mode
       n = {
+
         -- second key is the lefthand side of the map
 
         -- navigate buffer tabs with `H` and `L`
@@ -74,6 +73,10 @@ return {
       t = {
         -- setting a mapping to false will disable it
         -- ["<esc>"] = false,
+      },
+      i = {
+        -- vim.keymap.set("i", "jk", "<esc>")
+        ["jk"] = { "<esc>", desc = "Exit insert mode" },
       },
     },
   },
