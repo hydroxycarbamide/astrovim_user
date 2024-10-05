@@ -12,6 +12,8 @@ return {
       "tsx",
       "yaml",
       "json",
+      "xml",
+      "c_sharp",
       -- add more arguments for adding more treesitter parsers
     })
   end,
