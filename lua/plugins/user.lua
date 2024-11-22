@@ -7,14 +7,21 @@ return {
 
   -- == Examples of Adding Plugins ==
 
-  "andweeb/presence.nvim",
+  -- "andweeb/presence.nvim",
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
     config = function() require("lsp_signature").setup() end,
   },
-
-  -- == Examples of Overriding Plugins ==
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && npm install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
+  },
 
   -- customize alpha options
   {
@@ -84,6 +91,7 @@ return {
 
   {
     "Exafunction/codeium.nvim",
+    enabled = false,
     dependencies = {
         "nvim-lua/plenary.nvim",
         "hrsh7th/nvim-cmp",
