@@ -69,6 +69,18 @@ return {
         ["<Leader>b"] = { desc = "Buffers" },
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+        ["gh"] = {
+          "0",
+          desc = "Goto line start"
+        },
+        ["gl"] = {
+          "$",
+          desc = "Goto line end"
+        },
+        ["gs"] = {
+          "^",
+          desc = "Goto first non-blank in line"
+        }
       },
       t = {
         -- setting a mapping to false will disable it
