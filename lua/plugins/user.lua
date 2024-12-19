@@ -90,6 +90,9 @@ return {
   },
 
   {
+    "github/copilot.vim"
+  },
+  {
     "Exafunction/codeium.nvim",
     enabled = false,
     dependencies = {
