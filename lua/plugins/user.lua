@@ -13,15 +13,6 @@ return {
     event = "BufRead",
     config = function() require("lsp_signature").setup() end,
   },
-  {
-    "iamcco/markdown-preview.nvim",
-    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-    build = "cd app && npm install",
-    init = function()
-      vim.g.mkdp_filetypes = { "markdown" }
-    end,
-    ft = { "markdown" },
-  },
 
   -- customize alpha options
   {
@@ -90,7 +81,8 @@ return {
   },
 
   {
-    "github/copilot.vim"
+    "github/copilot.vim",
+    enabled = true,
   },
   {
     "Exafunction/codeium.nvim",
