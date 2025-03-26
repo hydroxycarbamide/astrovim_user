@@ -86,23 +86,6 @@ return {
   },
 
   {
-    "github/copilot.vim",
-    enabled = true,
-  },
-  {
-    "Exafunction/codeium.nvim",
-    enabled = false,
-    dependencies = {
-        "nvim-lua/plenary.nvim",
-        "hrsh7th/nvim-cmp",
-    },
-    event = "BufEnter",
-    config = function()
-        require("codeium").setup({
-        })
-    end
-  },
-  {
     "Wansmer/symbol-usage.nvim",
     event = "BufReadPre", -- need run before LspAttach if you use nvim 0.9. On 0.10 use 'LspAttach'
     config = function() require("symbol-usage").setup() end,
